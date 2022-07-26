@@ -1,0 +1,107 @@
+.modal--title--position {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 528px;
+    min-height: 580px;
+
+    transform: translate(-50%, -50%);
+    background: getColor('white-color');
+
+    border-radius: 4px;
+
+    &-form {
+        /* outline: 1px solid rebeccapurple; */
+        margin: 2.5rem 2.5rem 0;
+    }
+
+    &__label {
+        display: block;
+
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        /* outline: 1px solid red; */
+    }
+
+    &__wrap {
+        position: relative;
+        margin-bottom: 10px;
+    }
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal__input {
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px 12px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid getColor('blue-color');
+    }
+
+    &:focus+.modal__icon,
+    &:hover+.modal__icon {
+        fill: getColor('blue-color');
+    }
+}
+
+.modal__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    fill: getColor('black-color');
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__coment {
+    display: block;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    cursor: pointer;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
+
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid getColor('blue-color');
+    }
+}
+

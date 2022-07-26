@@ -1,0 +1,42 @@
+.team--background-color {
+  background: getColor("icon-background");
+}
+
+.team {
+  // display: flex;
+  // justify-content: space-between;
+  // padding-left: 0px;
+  // margin: 0px;
+
+  &__item {
+    background-color: getColor("white-color");
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    padding: 30px 0px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: getColor("black-color");
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 1.18;
+    color: getColor("basic-text-color");
+    margin: 0px;
+    padding-bottom: 16px;
+  }
+}
