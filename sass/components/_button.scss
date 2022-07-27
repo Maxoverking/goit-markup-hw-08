@@ -22,11 +22,15 @@
   }
 }
 
+.footer__button--position {
+  display: flex;
+  justify-content: center;
+}
+
 .footer--button--position {
-  text-align: start;
-  // padding: 0px 28px;
-  margin-left: 12px;
+  padding-right: 30px;
   position: relative;
+  // padding: 0px 28px;
 }
 
 .footer__button--icon {
@@ -34,19 +38,21 @@
   max-width: 24px;
   height: 24px;
   top: 50%;
-  right: 30px;
+  right: 24px;
   transform: translateY(-50%);
 }
 
 /* Кнопки портфолио */
 
 .button__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   // display: flex;
   // justify-content: center;
   // padding-left: 0px;
   // margin: 0px;
   // margin-bottom: 50px;
-  // gap: 8px;
 
   &__item {
     font-family: inherit;
