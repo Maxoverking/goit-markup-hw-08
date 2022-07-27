@@ -25,6 +25,10 @@
 .footer__button--position {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer--button--position {
@@ -48,6 +52,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   // display: flex;
   // justify-content: center;
   // padding-left: 0px;
@@ -66,8 +74,7 @@
     border-radius: 4px;
     padding: 6px 22px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
+    A &:hover,
     &:focus,
     &:active {
       background-color: getColor("blue-color");

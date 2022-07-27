@@ -5,6 +5,12 @@
   &__inner {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__address {
@@ -44,12 +50,21 @@
   @media screen and (min-width: 768px) {
     margin: 0px 0px 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+  }
 }
 
 .footer__aside {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
     align-items: baseline;
   }
 }
@@ -62,15 +77,22 @@
 .footer-form {
   // display: flex;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .footer__label {
   @media screen and (min-width: 768px) {
     margin: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
   }
 }
 
@@ -94,6 +116,10 @@
     width: 450px;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
   & ::placeholder {
     color: getColor("placeholder-color");
   }
@@ -102,7 +128,10 @@
 /* Иконки футера */
 
 .footer--icon {
-  // margin-left: 76px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    margin-left: 76px;
+  }
 }
 
 .footer--title--color {
@@ -110,6 +139,11 @@
   margin: 60px 0px 20px;
   @media screen and (min-width: 768px) {
     margin: 0px 0px 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 12px 0px 20px;
   }
 }
 

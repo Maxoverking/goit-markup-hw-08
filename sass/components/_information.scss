@@ -5,11 +5,15 @@
   color: getColor("basic-text-color");
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
   }
 }
 
@@ -22,6 +26,11 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin: 0px;
   }
 }
 .information__item::before {
