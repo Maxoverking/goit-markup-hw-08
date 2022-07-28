@@ -18,7 +18,7 @@
   &__contact {
     display: none;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       display: block;
 
       & li:first-child {

@@ -29,8 +29,9 @@
     position: absolute;
     content: "";
     margin: 0px;
-    left: 83px;
-    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 26px;
     z-index: 1;
     font-weight: 700;
     font-size: 14px;
