@@ -5,29 +5,40 @@
   background-color: getColor("white-color");
 
   &__inner {
-    @media screen and (min-width: 768px) {
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &__contact {
-      display: none;
+    // @media screen and (min-width: 768px) {
+    // }
 
-      @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
+    // @media screen and (min-width: 1200px) {
+    // }
+  }
+  &__contact {
+    display: none;
 
-        padding: 4px 0px;
+    @media screen and (min-width: 767px) {
+      display: block;
+
+      & li:first-child {
+        margin-bottom: 10px;
       }
 
-      // & li:not(:last-child) {
-      //   margin-right: 50px;
-      // }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+
+        & li:first-child {
+          margin-right: 50px;
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 }
+
 .header__nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header__burger {
@@ -35,6 +46,9 @@
   border: none;
   padding: 0px;
   margin: 0px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .header__burger .icon-header-close {
   display: none;
@@ -54,11 +68,19 @@
   top: 100%;
   left: 0%;
   width: 100%;
+
   &.is-open {
     display: block;
+
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
   }
 }
 .nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   // display: none;
 
   @media screen and (min-width: 768px) {
@@ -92,26 +114,22 @@
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    // &--color-grey {
-    //   // @extend %dis-flex__al-it;
-    // }
-
     &--color-grey {
       color: getColor("basic-text-color");
     }
   }
 }
 
-// .header-line .nav__link.current::after {
-//   position: absolute;
-//   content: "";
-//   top: 44px;
-//   left: 0;
-//   width: 100%;
-//   height: 4px;
-//   background-color: getColor("blue-color");
-//   border-radius: 2px;
-// }
+.header-line .nav__link.current::after {
+  position: absolute;
+  content: "";
+  top: 44px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: getColor("blue-color");
+  border-radius: 2px;
+}
 
 /*  Конверт и телефон */
 .icon--smartphone,

@@ -230,19 +230,37 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
   width: 100%;
   background-color: #ffffff;
 }
-.header__inner__contact {
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__contact {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .header__inner__contact {
+@media screen and (min-width: 767px) {
+  .header__contact {
+    display: block;
+  }
+  .header__contact li:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1200px) {
+  .header__contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 4px 0px;
+  }
+  .header__contact li:first-child {
+    margin-right: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -250,12 +268,6 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__burger {
@@ -263,6 +275,11 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
   border: none;
   padding: 0px;
   margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
 }
 
 .header__burger .icon-header-close {
@@ -288,7 +305,17 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
 .menu__container.is-open {
   display: block;
 }
+@media screen and (min-width: 767px) {
+  .menu__container.is-open {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
@@ -319,6 +346,17 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
 }
 .nav__link--color-grey {
   color: #757575;
+}
+
+.header-line .nav__link.current::after {
+  position: absolute;
+  content: "";
+  top: 44px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 
 /*  Конверт и телефон */
@@ -449,7 +487,20 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
 .section--padding-top {
   padding-top: 0px;
 }
+@media screen and (max-width: 1199px) {
+  .section--padding-top {
+    display: none;
+  }
+}
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding-left: 0px;
+  gap: 30px;
+}
 .card__item {
   position: relative;
 }
@@ -586,7 +637,18 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15 px;
+  margin: -15px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px;
+  }
 }
 .clients__link {
   display: -webkit-box;
@@ -615,15 +677,23 @@ A .button__list__item:hover, .button__list__item:focus, .button__list__item:acti
   height: 60px;
 }
 
-.clients__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 2);
-      flex-basis: calc((100% - 60px) / 2);
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
   }
 }
 

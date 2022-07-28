@@ -1,12 +1,14 @@
 .section--padding-top {
   padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
-
 .card {
-  // display: flex;
-  // margin: auto;
-  // padding-left: 0px;
-  // gap: 30px;
+  display: flex;
+  margin: auto;
+  padding-left: 0px;
+  gap: 30px;
 
   &__item {
     position: relative;
