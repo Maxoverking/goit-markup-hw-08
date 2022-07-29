@@ -553,11 +553,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 0px;
-    margin: 0px;
+    gap: 30px;
   }
 }
 .team__item {
