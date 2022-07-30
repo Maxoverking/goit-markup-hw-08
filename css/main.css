@@ -1026,6 +1026,7 @@ img {
 }
 @media screen and (max-width: 549px) {
   .modal {
+    margin: 94px 15px;
     max-width: calc(100vw - 60px);
     width: 100%;
   }
