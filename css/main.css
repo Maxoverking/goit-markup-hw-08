@@ -71,7 +71,14 @@ img {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
 }
+@media screen and (max-width: 549px) {
+  .overlay {
+    padding: 94px 15px;
+  }
+}
+
 .overlay.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -170,7 +177,6 @@ img {
 .modal--button {
   display: block;
   margin: auto;
-  margin-bottom: 40px;
 }
 .modal--button:hover {
   background: #188ce8;
@@ -178,18 +184,32 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.modal__button__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .button__close {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
   width: 30px;
   height: 30px;
+  margin: 8px 8px 0px 0px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+@media screen and (min-width: 550px) {
+  .button__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 }
 .button__close:hover, .button__close:focus {
   fill: #2196f3;
@@ -1015,30 +1035,30 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 580px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background: #ffffff;
+  min-height: 580px;
   border-radius: 4px;
-}
-@media screen and (max-width: 549px) {
-  .modal {
-    margin: 94px 15px;
-    max-width: calc(100vw - 60px);
-    width: 100%;
-  }
+  max-width: calc(100vw - 30px);
+  width: 100%;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 550px) {
   .modal {
-    min-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 528px;
   }
 }
 .modal-form {
-  /* outline: 1px solid rebeccapurple; */
-  margin: 2.5rem 2.5rem 0;
+  margin: 0rem 2.5rem;
+}
+@media screen and (min-width: 550px) {
+  .modal-form {
+    margin: 2.5rem 2.5rem 0;
+  }
 }
 .modal__label {
   display: block;
@@ -1278,6 +1298,10 @@ fieldset {
 
 .mobile__item {
   margin-bottom: 36px;
+}
+
+.down {
+  margin-bottom: 302px;
 }
 
 .mobile--contact {

@@ -5,28 +5,31 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 580px;
-  transform: translate(-50%, -50%);
   background: getColor("white-color");
-
+  min-height: 580px;
   border-radius: 4px;
+  max-width: calc(100vw - 30px);
+  width: 100%;
+  padding-bottom: 40px;
 
   @media screen and (max-width: 549px) {
-    margin: 94px 15px;
-    max-width: calc(100vw - 60px);
-    width: 100%;
+    // margin: 94px 15px;
   }
 
   @media screen and (min-width: 550px) {
-    min-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
   }
 
   &-form {
-    /* outline: 1px solid rebeccapurple; */
-    margin: 2.5rem 2.5rem 0;
+    margin: 0rem 2.5rem;
+
+    @media screen and (min-width: 550px) {
+      margin: 2.5rem 2.5rem 0;
+    }
   }
 
   &__label {
