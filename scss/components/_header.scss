@@ -1,16 +1,20 @@
 .header {
   position: relative;
-  padding: 24px 0px;
   width: 100%;
   background-color: getColor("white-color");
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0px;
+  }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    // @media screen and (min-width: 768px) {
-    // }
 
     // @media screen and (min-width: 1200px) {
     // }
@@ -41,42 +45,6 @@
   display: flex;
 }
 
-.header__burger {
-  background: transparent;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.header__burger .icon-header-close {
-  display: none;
-}
-
-.header__burger.is-open .icon-header-close {
-  display: block;
-}
-.header__burger.is-open .icon-header-menu {
-  display: none;
-}
-
-.menu__container {
-  display: none;
-  position: absolute;
-  background-color: getColor("white-color");
-  top: 100%;
-  left: 0%;
-  width: 100%;
-
-  &.is-open {
-    display: block;
-
-    @media screen and (min-width: 767px) {
-      display: none;
-    }
-  }
-}
 .nav {
   @media screen and (max-width: 767px) {
     display: none;
