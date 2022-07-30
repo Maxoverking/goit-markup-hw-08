@@ -8,19 +8,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
-  min-width: 528px;
   min-height: 580px;
-
   transform: translate(-50%, -50%);
   background: getColor("white-color");
 
   border-radius: 4px;
 
-  @media screen and (max-width: 558px) {
-    min-width: 215px;
-    width: calc(100vw - 30px);
-    // height: calc(100vw - 30px);
+  @media screen and (max-width: 549px) {
+    max-width: calc(100vw - 60px);
+    width: 100%;
+  }
+
+  @media screen and (min-width: 550px) {
+    min-width: 528px;
   }
 
   &-form {
