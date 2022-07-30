@@ -13,7 +13,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -233,16 +232,7 @@ img {
   position: relative;
   width: 100%;
   background-color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 14px 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    padding: 24px 0px;
-  }
+  padding: 24px 0px;
 }
 .header__inner {
   display: -webkit-box;
@@ -330,6 +320,11 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+@media screen and (max-width: 1199px) {
+  .header-line .nav__link.current::after {
+    top: 54px;
+  }
 }
 
 /*  Конверт и телефон */
