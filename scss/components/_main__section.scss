@@ -5,65 +5,65 @@ $main--section--gradient: linear-gradient(
 );
 
 .main__section {
-  max-width: 1600px;
-  padding: 96px 0px;
-  text-align: center;
-  background-color: getColor("section-order-service");
-  background-image: $main--section--gradient,
-    url("/images/Header\ img1200@1x.jpg");
-
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  @media screen and (min-width: 340px) {
-    padding: 118px 0px;
+  @media screen and (max-width: 340px) {
+    padding: 96px 0px;
   }
 
-  @media screen and (max-width: 479px) {
-    max-width: 480px;
+  max-width: 500px;
+  padding: 118px 0px;
+  text-align: center;
+  background-color: getColor("section-order-service");
+
+  background-image: $main--section--gradient,
+    url("/images/Header\ img-1-480.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 500px) and (max-width: 949px) {
+    max-width: 950px;
     background-image: $main--section--gradient,
-      url("../images/Header\ img480@1x.jpg");
+      url("/images/Header\ img-2-768.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      padding: 200px 0px;
       background-image: $main--section--gradient,
-        url("../images/Header\ img480@2x.jpg");
+        url("/images/Header\ img-2-768@2x.jpg");
     }
   }
 
-  // @media screen and (min-width: 480px) and (max-width: 767px) {
-  //   max-width: 768px;
-  //   background-image: $main--section--gradient,
-  //     url("../images/Header\ img768@1x.jpg");
+  @media screen and (min-width: 950px) {
+    padding: 200px 0px;
+    max-width: 1200px;
+    background-image: $main--section--gradient,
+      url("/images/Header\ img-2-768.jpg");
 
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: $main--section--gradient,
-  //       url("../images/Header\ img768@2x.jpg");
-  //   }
-  // }
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $main--section--gradient,
+        url("/images/Header\ img-2-768@2x.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
+    max-width: 1600px;
+    background-image: $main--section--gradient,
+      url("/images/Header\ img-3-1200.jpg");
 
-  // @media screen and (min-width: 768px) {
-  //   max-width: 1600px;
-  //   padding: 200px 0px;
-  //   background-image: $main--section--gradient,
-  //     url("../images/Header\ img1200@1x.jpg");
-  // }
-  // // @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  // //   (min-resolution: 192dpi),
-  // //   (min-resolution: 2dppx) {
-  // //   background-image: $main--section--gradient,
-  // //     url("../images/Header\ img1200@2x.jpg");
-  // // }
-  // // @media screen and (min-width: 1200px) {
-  // //   max-width: 1600px;
-  // //   background-image: $main--section--gradient,
-  // //     url("../images/Header\ img1200@1x.jpg");
-  // // }
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $main--section--gradient,
+        url("/images/Header\ img-3-1200@2x.jpg");
+    }
+  }
+
   &__title {
     color: getColor("white-color");
     max-width: 360px;

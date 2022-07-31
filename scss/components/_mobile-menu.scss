@@ -3,6 +3,7 @@
   border: none;
   padding: 0px;
   margin: 0px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -27,6 +28,7 @@
 
   &.is-open {
     display: block;
+    z-index: 9;
 
     @media screen and (min-width: 767px) {
       display: none;
@@ -112,4 +114,10 @@
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
   margin: 0px 10px;
+}
+
+.blue--color:hover,
+.blue--color:focus,
+.blue--color:active {
+  fill: getColor("blue-color");
 }
