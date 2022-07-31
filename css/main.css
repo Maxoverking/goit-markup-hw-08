@@ -822,9 +822,14 @@ img {
   margin: 0px;
 }
 
-.cards-thumb {
-  position: relative;
-  overflow: hidden;
+@media screen and (min-width: 768px) {
+  .cards-thumb {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .cards-thumb::before {
   background: rgba(33, 150, 243, 0.9);
@@ -842,6 +847,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .cards-thumb::before,
+.thumb-text {
+    display: none;
+  }
+}
 
 .thumb-text {
   padding-top: 62px;
@@ -852,6 +863,16 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .thumb-text {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .thumb-text {
+    padding: 28px;
+  }
 }
 
 .footer {
