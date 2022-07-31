@@ -1075,9 +1075,9 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: 528px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    max-width: 528px;
   }
 }
 .modal-form {
@@ -1204,14 +1204,14 @@ fieldset {
   position: relative;
 }
 .checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-@media screen and (max-width: 550px) {
-  .checkbox__label {
-    margin-left: 30px;
-  }
+  margin-left: 30px;
 }
 .checkbox__input {
   -webkit-appearance: none;
@@ -1281,28 +1281,16 @@ fieldset {
   }
 }
 
-.header__burger .icon-header-close {
-  display: none;
-}
-
-.header__burger.is-open .icon-header-close {
-  display: block;
-}
-
-.header__burger.is-open .icon-header-menu {
-  display: none;
-}
-
 .menu__container {
   display: none;
   position: absolute;
   background-color: #ffffff;
   left: 0%;
   width: 100%;
+  z-index: 9;
 }
 .menu__container.is-open {
   display: block;
-  z-index: 9;
 }
 @media screen and (min-width: 767px) {
   .menu__container.is-open {
@@ -1329,10 +1317,6 @@ fieldset {
   margin-bottom: 36px;
 }
 
-.down {
-  margin-bottom: 302px;
-}
-
 .mobile--contact {
   color: #212121;
   font-weight: 500;
@@ -1350,8 +1334,6 @@ fieldset {
 
 .tel {
   font-size: 34px;
-}
-.tel:hover, .tel:focus, .tel:active {
   color: #2196f3;
 }
 

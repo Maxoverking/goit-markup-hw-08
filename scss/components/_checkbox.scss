@@ -1,3 +1,6 @@
+// .checkbox__wrap{
+
+// }
 .checkbox {
   display: flex;
   justify-content: center;
@@ -13,14 +16,18 @@
   /* outline: 1px solid red; */
   position: relative;
 
+  // @media screen and (min-width: 530px) {
+  //   display: inline;
+  // }
+
   &__label {
+    display: flex;
+    width: 100%;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width: 550px) {
-      margin-left: 30px;
-    }
+    margin-left: 30px;
   }
 
   &__input {

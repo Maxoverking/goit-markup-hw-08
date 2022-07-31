@@ -12,16 +12,12 @@
   width: 100%;
   padding-bottom: 40px;
 
-  // @media screen and (min-width: 530px) and (max-width: 767px) {
-
-  // }
-
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     max-width: 528px;
+    transform: translate(-50%, -50%);
   }
 
   &-form {

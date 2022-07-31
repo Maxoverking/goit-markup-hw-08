@@ -8,16 +8,6 @@
     display: none;
   }
 }
-.header__burger .icon-header-close {
-  display: none;
-}
-
-.header__burger.is-open .icon-header-close {
-  display: block;
-}
-.header__burger.is-open .icon-header-menu {
-  display: none;
-}
 
 .menu__container {
   display: none;
@@ -25,10 +15,10 @@
   background-color: getColor("white-color");
   left: 0%;
   width: 100%;
+  z-index: 9;
 
   &.is-open {
     display: block;
-    z-index: 9;
 
     @media screen and (min-width: 767px) {
       display: none;
@@ -48,9 +38,6 @@
 .mobile__item {
   margin-bottom: 36px;
 }
-.down {
-  margin-bottom: 302px;
-}
 
 .mobile--contact {
   color: getColor("black-color");
@@ -69,11 +56,7 @@
 }
 .tel {
   font-size: 34px;
-  &:hover,
-  &:focus,
-  &:active {
-    color: getColor("blue-color");
-  }
+  color: getColor("blue-color");
 }
 
 .mail {
@@ -97,7 +80,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: getColor("blue-color");
   margin-right: 5px;
 }
 
