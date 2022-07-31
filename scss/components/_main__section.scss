@@ -5,41 +5,40 @@ $main--section--gradient: linear-gradient(
 );
 
 .main__section {
-  @media screen and (max-width: 340px) {
-    padding: 96px 0px;
-  }
-
   max-width: 500px;
   padding: 118px 0px;
   text-align: center;
   background-color: getColor("section-order-service");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   background-image: $main--section--gradient,
-    url("../images/Header\ img-1-480.jpg");
+    url("../images/main-pic/Header\ img-1-480.jpg 1x");
+
+  @media screen and (max-width: 340px) {
+    padding: 96px 0px;
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: $main--section--gradient,
-      url("../images/Header\ img-1-480@2x.jpg 2x");
+      url("../images/main-pic/Header\ img-1-480@2x.jpg 2x");
   }
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media screen and (min-width: 500px) and (max-width: 949px) {
     max-width: 950px;
     background-image: $main--section--gradient,
-      url("../images/Header\ img-2-768.jpg");
+      url("../images/main-pic/Header\ img-2-768.jpg 1x");
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $main--section--gradient,
-        url("../images/Header\ img-2-768@2x.jpg 2x");
+        url("../images/main-pic/Header\ img-2-768@2x.jpg 2x");
     }
   }
 
@@ -47,28 +46,28 @@ $main--section--gradient: linear-gradient(
     padding: 200px 0px;
     max-width: 1200px;
     background-image: $main--section--gradient,
-      url("../images/Header\ img-2-768.jpg");
+      url("../images/main-pic/Header\ img-2-768.jpg 1x");
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $main--section--gradient,
-        url("../images/Header\ img-2-768@2x.jpg 2x");
+        url("../images/main-pic/Header\ img-2-768@2x.jpg 2x");
     }
   }
   @media screen and (min-width: 1200px) {
     padding: 200px 0px;
     max-width: 1600px;
     background-image: $main--section--gradient,
-      url("../images/Header\ img-3-1200.jpg");
+      url("../images/main-pic/Header\ img-3-1200.jpg 1x");
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $main--section--gradient,
-        url("/images/Header\ img-3-1200@2x.jpg 2x");
+        url("../images/main-pic/Header\ img-3-1200@2x.jpg 2x");
     }
   }
 
