@@ -17,6 +17,14 @@ $main--section--gradient: linear-gradient(
   background-image: $main--section--gradient,
     url("../images/Header\ img-1-480.jpg");
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $main--section--gradient,
+      url("../images/Header\ img-1-480@2x.jpg 2x");
+  }
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +39,7 @@ $main--section--gradient: linear-gradient(
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $main--section--gradient,
-        url("../images/Header\ img-2-768@2x.jpg");
+        url("../images/Header\ img-2-768@2x.jpg 2x");
     }
   }
 
@@ -46,7 +54,7 @@ $main--section--gradient: linear-gradient(
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $main--section--gradient,
-        url("../images/Header\ img-2-768@2x.jpg");
+        url("../images/Header\ img-2-768@2x.jpg 2x");
     }
   }
   @media screen and (min-width: 1200px) {
@@ -60,7 +68,7 @@ $main--section--gradient: linear-gradient(
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $main--section--gradient,
-        url("../images/Header\ img-3-1200@2x.jpg");
+        url("/images/Header\ img-3-1200@2x.jpg 2x");
     }
   }
 
