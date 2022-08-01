@@ -22,15 +22,37 @@
 <header class="header" style="border-bottom:1px solid #ECECEC;">
     <div class="container ">
         <div class="header__inner">
-            <div>
+
+
+            <div class="desktop__nav">
                 <a href="./index.html" class="logo">Web<span class="black--text">Studio</span></a>
+                <ul class="nav">
+                    <li class="nav__item">
+
+                        <div class="header-line">
+                            <a class="nav__link" href="./index.html">Студія</a>
+                        </div>
+
+                    </li>
+                    <li class="nav__item">
+                        <div class="header-line">
+                            <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
+                        </div>
+
+                    </li>
+                    <li class="nav__item">
+                        <div class="header-line">
+                            <a class="nav__link" href="/">Контакти</a>
+                        </div>
+
+                    </li>
+                </ul>
             </div>
 
             <nav class="header__nav">
                 <button class="header__burger is-open" type="button" aria-controls="menu__container" data-mobile-open>
 
                     <svg width="40" height="40" aria-label="Бургер меню">
-                        <use></use>
                         <use class="icon-header-close" href="./images/icon/icons.svg#icon-menu-header"></use>
                     </svg>
 
@@ -40,11 +62,11 @@
                     <div class="container">
                         <div class="mobile-container">
                             <div class="mobile-container-close">
-                                <button class="header__burger blue--color " type="button" aria-controls="menu__container"
-                                    data-mobile-close>
+                                <button class="header__burger  blue--color " type="button"
+                                    aria-controls="menu__container" data-mobile-close>
 
                                     <svg width="40" height="40" aria-label="Бургер меню">
-                                        <use class="icon-header-menu" href="./images/icon/icons.svg#icon-close-header">
+                                        <use class="icon-header-menu " href="./images/icon/icons.svg#icon-close-header">
                                         </use>
                                     </svg>
 
@@ -62,69 +84,49 @@
                                         <a class="mobile--contact" href="./portfolio.html">Портфоліо</a>
                                     </li>
 
-                                    <li class="mobile__item down">
+                                    <li class="mobile__item ">
                                         <a class="mobile--contact" href="/">Контакти</a>
                                     </li>
-
-                                    <div class="mobile__contact">
-                                        <li class="">
-                                            <a class="nav__link--color-grey tel" href="tel:+380961111111">
-                                                +38 096 111 11 11</a>
-                                        </li>
-
-                                        <li class="contact">
-                                            <a class="nav__link  nav__link--color-grey mail"
-                                                href="mailto:info@devstudio.com">
-                                                info@devstudio.com</a>
-                                        </li>
-                                    </div>
-
-
                                 </ul>
-                                <ul class="mobile__social">
-                                    <li class="mobile__social__item">
-                                        <a class="mobile__social__link line" href="./index.html">Instagram</a>
+                            </div>
+                            <div class="mobile__contact">
+                                <ul>
+                                    <li class="">
+                                        <a class="nav__link--color-grey tel" href="tel:+380961111111">
+                                            +38 096 111 11 11</a>
                                     </li>
 
-                                    <li class="mobile__social__item">
-                                        <a class="mobile__social__link line" href="./portfolio.html">Twitter</a>
-                                    </li>
-
-                                    <li class="mobile__social__item">
-                                        <a class="mobile__social__link line " href="/">Facebook</a>
-                                    </li>
-
-                                    <li class="mobile__social__item">
-                                        <a class="mobile__social__link " href="/">LinkedIn</a>
+                                    <li class="contact">
+                                        <a class="nav__link  nav__link--color-grey mail"
+                                            href="mailto:info@devstudio.com">
+                                            info@devstudio.com</a>
                                     </li>
                                 </ul>
                             </div>
 
+                            <ul class="mobile__social">
+                                <li class="mobile__social__item">
+                                    <a class="mobile__social__link line" href="./index.html">Instagram</a>
+                                </li>
+
+                                <li class="mobile__social__item">
+                                    <a class="mobile__social__link line" href="./portfolio.html">Twitter</a>
+                                </li>
+
+                                <li class="mobile__social__item">
+                                    <a class="mobile__social__link line " href="/">Facebook</a>
+                                </li>
+
+                                <li class="mobile__social__item">
+                                    <a class="mobile__social__link " href="/">LinkedIn</a>
+                                </li>
+                            </ul>
                         </div>
+
+                    </div>
             </nav>
             <!-- Основная навигация -->
 
-            <ul class="nav">
-                <li class="nav__item">
-
-                    <div class="header-line">
-                        <a class="nav__link" href="./index.html">Студія</a>
-                    </div>
-
-                </li>
-                <li class="nav__item">
-                    <div class="header-line">
-                        <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
-                    </div>
-
-                </li>
-                <li class="nav__item">
-                    <div class="header-line">
-                        <a class="nav__link" href="/">Контакти</a>
-                    </div>
-
-                </li>
-            </ul>
 
             <ul class="header__contact">
                 <li>
@@ -144,6 +146,8 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+
 
         </div>
     </div>
@@ -173,10 +177,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic1@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic1@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                        <source srcset="./images/projectpic/descktop/projectpic1@1x.jpg 1x, 
+                                                        ./images/projectpic/descktop/projectpic1@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/projectpic/tablet/projectpic1@1x.jpg 1x,
+                                                        ./images/projectpic/tablet/projectpic1@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/projectpic/phone/projectpic1@1x.jpg 1x,
+                                                        ./images/projectpic/phone/projectpic1@2x.jpg 2x"
+                                            media="(min-width: 767px)">
+                                    
+                                        <img src="./images/projectpic/phone/projectpic1@1x.jpg" alt="Компьютер" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -195,10 +211,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic2@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic2@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                    <source srcset="./images/projectpic/descktop/projectpic2@1x.jpg 1x, 
+                                                    ./images/projectpic/descktop/projectpic2@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    
+                                    <source srcset="./images/projectpic/tablet/projectpic2@1x.jpg 1x,
+                                                    ./images/projectpic/tablet/projectpic2@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                    <source srcset="./images/projectpic/phone/projectpic2@1x.jpg 1x,
+                                                    ./images/projectpic/phone/projectpic2@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+                                    
+                                    <img src="./images/projectpic/phone/projectpic2@1x.jpg" alt="Джордан" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -217,10 +245,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic3@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic3@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                    <source srcset="./images/projectpic/descktop/projectpic3@1x.jpg 1x, 
+                                                    ./images/projectpic/descktop/projectpic3@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    
+                                    <source srcset="./images/projectpic/tablet/projectpic3@1x.jpg 1x,
+                                                    ./images/projectpic/tablet/projectpic3@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                    <source srcset="./images/projectpic/phone/projectpic3@1x.jpg 1x,
+                                                    ./images/projectpic/phone/projectpic3@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+                                    
+                                    <img src="./images/projectpic/phone/projectpic3@1x.jpg" alt="Риба" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -239,10 +279,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic4@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic4@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                    <source srcset="./images/projectpic/descktop/projectpic4@1x.jpg 1x, 
+                                                    ./images/projectpic/descktop/projectpic4@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    
+                                    <source srcset="./images/projectpic/tablet/projectpic4@1x.jpg 1x,
+                                                    ./images/projectpic/tablet/projectpic4@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                    <source srcset="./images/projectpic/phone/projectpic4@1x.jpg 1x,
+                                                    ./images/projectpic/phone/projectpic4@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+                                    
+                                    <img src="./images/projectpic/phone/projectpic4@1x.jpg" alt="Наушники" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -261,10 +313,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic5@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic5@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                        <source srcset="./images/projectpic/descktop/projectpic5@1x.jpg 1x, 
+                                                        ./images/projectpic/descktop/projectpic5@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/projectpic/tablet/projectpic5@1x.jpg 1x,
+                                                        ./images/projectpic/tablet/projectpic5@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/projectpic/phone/projectpic5@1x.jpg 1x,
+                                                        ./images/projectpic/phone/projectpic5@2x.jpg 2x"
+                                            media="(min-width: 767px)">
+                                    
+                                        <img src="./images/projectpic/phone/projectpic5@1x.jpg" alt="Коробки" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -284,10 +348,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic6@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic6@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                        <source srcset="./images/projectpic/descktop/projectpic6@1x.jpg 1x, 
+                                                        ./images/projectpic/descktop/projectpic6@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/projectpic/tablet/projectpic6@1x.jpg 1x,
+                                                        ./images/projectpic/tablet/projectpic6@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/projectpic/phone/projectpic6@1x.jpg 1x,
+                                                        ./images/projectpic/phone/projectpic6@2x.jpg 2x"
+                                            media="(min-width: 767px)">
+                                    
+                                        <img src="./images/projectpic/phone/projectpic6@1x.jpg" alt="Компьютер большой" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -306,10 +382,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic7@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic7@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                        <source srcset="./images/projectpic/descktop/projectpic7@1x.jpg 1x, 
+                                                        ./images/projectpic/descktop/projectpic7@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/projectpic/tablet/projectpic7@1x.jpg 1x,
+                                                        ./images/projectpic/tablet/projectpic7@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/projectpic/phone/projectpic7@1x.jpg 1x,
+                                                        ./images/projectpic/phone/projectpic7@2x.jpg 2x"
+                                            media="(min-width: 767px)">
+                                    
+                                        <img src="./images/projectpic/phone/projectpic7@1x.jpg" alt="Книга" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -328,10 +416,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic8@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic8@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                        <source srcset="./images/projectpic/descktop/projectpic8@1x.jpg 1x, 
+                                                        ./images/projectpic/descktop/projectpic8@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/projectpic/tablet/projectpic8@1x.jpg 1x,
+                                                        ./images/projectpic/tablet/projectpic8@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/projectpic/phone/projectpic8@1x.jpg 1x,
+                                                        ./images/projectpic/phone/projectpic8@2x.jpg 2x"
+                                            media="(min-width: 767px)">
+                                    
+                                        <img src="./images/projectpic/phone/projectpic8@1x.jpg" alt="Карточка и нитка" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -350,10 +450,22 @@
                         <li class="project__item">
                             <a class="project__link" href="http://">
                                 <div class="cards-thumb">
-                                    <img 
-                                    srcset="./images/projectpic/phone/projectpic9@2x.jpg 2x"
-                                    src="./images/projectpic/phone/projectpic9@1x.jpg" 
-                                    alt="" width="370">
+                                    <picture>
+                                        <source srcset="./images/projectpic/descktop/projectpic9@1x.jpg 1x, 
+                                                        ./images/projectpic/descktop/projectpic9@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/projectpic/tablet/projectpic9@1x.jpg 1x,
+                                                        ./images/projectpic/tablet/projectpic9@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/projectpic/phone/projectpic9@1x.jpg 1x,
+                                                        ./images/projectpic/phone/projectpic9@2x.jpg 2x"
+                                            media="(min-width: 767px)">
+                                    
+                                        <img src="./images/projectpic/phone/projectpic9@1x.jpg" alt="Ноутбук" width="370">
+                                    </picture>
+
                                     <div class="thumb-text">
                                         <ul>
                                             <li>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати

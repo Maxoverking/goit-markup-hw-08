@@ -22,8 +22,31 @@
     <header class="header"> 
         <div class="container ">
             <div class="header__inner">
-                <div>
-                    <a href="./index.html" class="logo" >Web<span class="black--text">Studio</span></a>
+            
+                    
+                <div class="desktop__nav">
+                    <a href="./index.html" class="logo">Web<span class="black--text">Studio</span></a>
+                    <ul class="nav">
+                        <li class="nav__item">
+                
+                            <div class="header-line">
+                                <a class="nav__link current" href="./index.html">Студія</a>
+                            </div>
+                
+                        </li>
+                        <li class="nav__item">
+                            <div class="header-line">
+                                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+                            </div>
+                
+                        </li>
+                        <li class="nav__item">
+                            <div class="header-line">
+                                <a class="nav__link" href="/">Контакти</a>
+                            </div>
+                
+                        </li>
+                    </ul>
                 </div>
                 
                     <nav class="header__nav">
@@ -73,7 +96,7 @@
                                     </ul>
                                 </div>
                                 <div class="mobile__contact">
-                                   <ul>
+                                    <ul>
                                     <li class="">
                                         <a class="nav__link--color-grey tel" href="tel:+380961111111">
                                             +38 096 111 11 11</a>
@@ -85,9 +108,7 @@
                                     </li>
                                    </ul>
                                 </div>
-                                    
-                                    
-                                    
+                                                            
                                     <ul class="mobile__social">
                                         <li class="mobile__social__item">
                                             <a class="mobile__social__link line" href="./index.html">Instagram</a>
@@ -106,52 +127,33 @@
                                         </li>
                                     </ul>
                                 </div>
-                                                               
+                            
                             </div>
                     </nav>
                     <!-- Основная навигация -->
                     
-                    <ul class="nav">
-                        <li class="nav__item">
-                            
-                            <div class="header-line">
-                                <a class="nav__link current" href="./index.html">Студія</a>
-                            </div>
-                            
-                        </li>
-                        <li class="nav__item">
-                            <div class="header-line">
-                                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-                            </div>
-                            
-                        </li>
-                        <li class="nav__item">
-                            <div class="header-line">
-                                <a class="nav__link" href="/">Контакти</a>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                
-                <ul class="header__contact">
-                    <li>
-                        <a class="nav__link  nav__link--color-grey" href="mailto:info@devstudio.com">
-                            
-                                <svg class="icon--envelope">
-                                    <use  href="./images/icon/icons.svg#icon-envelope-hover"></use>
-                                </svg> 
-                            info@devstudio.com</a>
-                        </li>
-                    <li>
-                        <a class="nav__link nav__link--color-grey" href="tel:+380961111111">
+                   
+                        <ul class="header__contact">
+                            <li>
+                                <a class="nav__link  nav__link--color-grey" href="mailto:info@devstudio.com">
                         
-                            <svg class="icon--smartphone">
-                                <use  href="./images/icon/icons.svg#icon-smartphone"></use>
-                            </svg>   
-                        +38 096 111 11 11</a>
-                    </li>
-                </ul>
+                                    <svg class="icon--envelope">
+                                        <use href="./images/icon/icons.svg#icon-envelope-hover"></use>
+                                    </svg>
+                                    info@devstudio.com</a>
+                            </li>
+                            <li>
+                                <a class="nav__link nav__link--color-grey" href="tel:+380961111111">
+                        
+                                    <svg class="icon--smartphone">
+                                        <use href="./images/icon/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
 
+                    
+                    
             </div>
         </div>
     </header>
@@ -243,27 +245,23 @@
                     <h2 class="subtitle">Наша команда</h2>
                     <ul class="team">
                         <li class="team__item">
-                            <!-- <picture>
-                                <source srcset="./images/teampic/phone/teamguy-descktop@1x.jpg 1x, 
-                                ./images/teampic/phone/teamguy-descktop@2x.jpg 2x" 
-                                media="(min-width: 1200px)">
+                            <picture>
+                                <source srcset="./images/teampic/teamguy-descktop@1x.jpg 1x, 
+                                            ./images/teampic/teamguy-descktop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
                             
-                                <source srcset="./images/teampic/phone/teamguy-tablet@1x.jpg 1x,
-                                    ./images/teampic/phone/teamguy-tablet@2x.jpg 2x"
-                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                <source srcset="./images/teampic/teamguy-tablet@1x.jpg 1x,
+                                            ./images/teampic/teamguy-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
                             
-                                <source srcset="./images/teampic/phone/teamguy-phone@1x.jpg 1x, 
-                                ./images/teampic/phone/teamguy-phone@1x.jpg 2x"
-                                    media="(min-width: 767px)">
+                                <source srcset="./images/teampic/teamguy-phone@1x.jpg 1x, 
+                                            ./images/teampic/teamguy-phone@1x.jpg 2x"
+                                        media="(min-width: 767px)">
                             
-                                <img src="./images/teampic/phone/teamguy-tablet@1x.jpg" alt="Игорь Демьяненко">
-                            </picture> -->
+                                <img src="./images/teampic/teamguy-phone@1x.jpg" 
+                                alt="Игорь Демьяненко" width="270">
+                            </picture>
                         
-                            <img 
-                            srcset="./images/teampic/phone/teamguy@1x.jpg 1x, 
-                            ./images/teampic/phone/teamguy@2x.jpg 2x"
-                            src="./images/teampic/phone/teamguy@1x.jpg" 
-                            alt="Product Designer" width="270">
                             <div class="team__description">
                                 <h3 class="team__name">Ігор Дем'яненко</h3>
                                 <p class="team__title">Product Designer</p>
@@ -303,10 +301,22 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                            srcset="./images/teampic/phone/teamguy2@1x.jpg 1x, ./images/teampic/phone/teamguy2@2x.jpg 2x"
-                            src="./images/teampic/phone/teamguy2@1x.jpg"
-                            alt="Frontend Developer" width="270">
+                            <picture>
+                                <source srcset="./images/teampic/teamguy-descktop2@1x.jpg 1x, 
+                                                ./images/teampic/teamguy-descktop2@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+                            
+                                <source srcset="./images/teampic/teamguy-tablet2@1x.jpg 1x,
+                                                ./images/teampic/teamguy-tablet2@2x.jpg 2x"
+                                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/teampic/teamguy-phone2@1x.jpg 1x, 
+                                                ./images/teampic/teamguy-phone2@2x.jpg 2x" 
+                                                media="(min-width: 767px)">
+                            
+                                <img src="./images/teampic/teamguy-phone2@1x.jpg" 
+                                alt="Игорь Демьяненко" width="270">
+                            </picture>
                             <div class="team__description">
                                 <h3 class="team__name">Ольга Рєпіна</h3>
                                 <p class="team__title">Frontend Developer</p>
@@ -347,10 +357,22 @@
                         </li>
                     
                         <li class="team__item">
-                            <img
-                            srcset="./images/teampic/phone/teamguy3@1x.jpg 1x, ./images/teampic/phone/teamguy3@2x.jpg 2x"
-                            src="./images/teampic/phone/teamguy3@1x.jpg"
-                            alt="Marketing" width="270">
+                            <picture>
+                                <source srcset="./images/teampic/teamguy-descktop3@1x.jpg 1x, 
+                                                ./images/teampic/teamguy-descktop3@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+                            
+                                <source srcset="./images/teampic/teamguy-tablet3@1x.jpg 1x,
+                                                ./images/teampic/teamguy-tablet3@2x.jpg 2x"
+                                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/teampic/teamguy-phone3@1x.jpg 1x, 
+                                                ./images/teampic/teamguy-phone3@2x.jpg 2x" 
+                                                media="(min-width: 767px)">
+                            
+                                <img src="./images/teampic/teamguy-phone3@1x.jpg" 
+                                alt="Игорь Демьяненко" width="270">
+                            </picture>
                             <div class="team__description">
                                 <h3 class="team__name">Микола Тарасов</h3>
                                 <p class="team__title">Marketing</p>
@@ -391,10 +413,23 @@
                         </li>
                     
                         <li class="team__item">
-                            <img
-                            srcset="./images/teampic/phone/teamguy4@1x.jpg 1x, ./images/teampic/phone/teamguy4@2x.jpg 2x"
-                            src="./images/teampic/phone/teamguy4@1x.jpg"
-                            alt="UI Designer" width="270">
+                            <picture>
+                                <source srcset="./images/teampic/teamguy-descktop4@1x.jpg 1x, 
+                                                ./images/teampic/teamguy-descktop4@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+                            
+                                <source srcset="./images/teampic/teamguy-tablet4@1x.jpg 1x,
+                                                ./images/teampic/teamguy-tablet4@2x.jpg 2x"
+                                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/teampic/teamguy-phone4@1x.jpg 1x, 
+                                                ./images/teampic/teamguy-phone4@2x.jpg 2x" 
+                                                media="(min-width: 767px)">
+                            
+                                <img src="./images/teampic/teamguy-phone4@1x.jpg"
+                                alt="Игорь Демьяненко" width="270">
+                            </picture>
+
                             <div class="team__description">
                                 <h3 class="team__name">Михайло Єрмаков</h3>
                                 <p class="team__title">UI Designer</p>
