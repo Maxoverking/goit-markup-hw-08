@@ -226,8 +226,15 @@ img {
   color: #2196f3;
 }
 
-.side {
-  margin-right: 77px;
+@media screen and (min-width: 768px) {
+  .side {
+    margin-right: 52px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .side {
+    margin-right: 92px;
+  }
 }
 
 .black--text {
@@ -1337,7 +1344,7 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  padding: 35px 25px 0px;
+  padding: 35px 25px 10px;
 }
 
 .mobile__menu__block {
