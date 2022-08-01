@@ -15,6 +15,7 @@
   background-color: getColor("white-color");
   left: 0%;
   width: 100%;
+  height: 100vh;
   z-index: 9;
 
   &.is-open {
@@ -25,11 +26,7 @@
     }
   }
 }
-.mobile__nav {
-  @media screen and (min-width: 399px) {
-    padding-left: 40px;
-  }
-}
+
 .mobile-container-close {
   display: flex;
   justify-content: flex-end;
