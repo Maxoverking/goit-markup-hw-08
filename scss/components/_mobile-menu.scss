@@ -15,7 +15,7 @@
   background-color: getColor("white-color");
   left: 0%;
   width: 100%;
-  height: 100vh;
+
   z-index: 9;
 
   &.is-open {
@@ -26,10 +26,23 @@
     }
   }
 }
-
-.mobile-container-close {
+.mobile__menu__wrap {
   display: flex;
-  justify-content: flex-end;
+  height: 100vh;
+  padding: 35px 25px 0px;
+}
+.mobile__menu__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-container-close {
+  // display: flex;
+  // justify-content: flex-end;
+  // margin-right: 17px;
+
+  position: absolute;
+  right: 29px;
 }
 
 .mobile__item {
