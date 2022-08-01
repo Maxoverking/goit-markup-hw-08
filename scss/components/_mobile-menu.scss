@@ -45,7 +45,7 @@
   right: 29px;
 }
 
-.mobile__item {
+.mobile__item:not(:last-child) {
   margin-bottom: 36px;
 }
 

@@ -3,7 +3,7 @@
   color: getColor("blue-color");
   font-family: "Raleway";
   font-size: 26px;
-  margin-right: 77px;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   & .black--text:hover,
@@ -12,7 +12,9 @@
     color: getColor("blue-color");
   }
 }
-
+.side {
+  margin-right: 77px;
+}
 .black--text {
   color: getColor("black-color");
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
