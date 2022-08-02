@@ -45,6 +45,9 @@ img {
 
 .section {
   padding: 94px 0px;
+  @media screen and (max-width: 1200px) {
+    padding: 60px 0px;
+  }
 }
 
 .subtitle {

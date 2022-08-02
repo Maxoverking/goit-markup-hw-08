@@ -49,6 +49,11 @@ img {
 .section {
   padding: 94px 0px;
 }
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 60px 0px;
+  }
+}
 
 .subtitle {
   font-weight: 700;
@@ -261,7 +266,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .header {
-    padding: 0px;
+    padding: 14px 0px;
   }
 }
 .header__inner {
@@ -384,7 +389,6 @@ img {
 }
 
 .main__section {
-  max-width: 500px;
   padding: 118px 0px;
   text-align: center;
   background-color: #2f303a;
@@ -407,7 +411,6 @@ img {
 }
 @media screen and (min-width: 500px) and (max-width: 949px) {
   .main__section {
-    max-width: 950px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-pic/img-2-768.jpg ");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-pic/img-2-768.jpg ");
   }
@@ -421,7 +424,6 @@ img {
 @media screen and (min-width: 950px) {
   .main__section {
     padding: 200px 0px;
-    max-width: 1200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-pic/img-2-768.jpg ");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-pic/img-2-768.jpg ");
   }
@@ -435,7 +437,6 @@ img {
 @media screen and (min-width: 1200px) {
   .main__section {
     padding: 200px 0px;
-    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-pic/img-3-1200.jpg ");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-pic/img-3-1200.jpg ");
   }
@@ -455,7 +456,7 @@ img {
   text-transform: uppercase;
   margin: 0px auto 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main__section__title {
     max-width: 696px;
     font-weight: 900;
@@ -526,6 +527,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #212121;
+  margin: 30px 0px 10px;
+}
+@media screen and (min-width: 768px) {
+  .information__title {
+    text-align: start;
+  }
 }
 
 .information__description {
@@ -576,7 +583,6 @@ img {
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  opacity: 0.3;
 }
 .card__item p {
   position: absolute;
@@ -951,16 +957,15 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer__info {
     margin: 0px 0px 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .footer__info {
-    margin: 0px;
+    text-align: center;
   }
 }
 
@@ -1079,6 +1084,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer--title--color {
     margin: 0px 0px 20px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1102,21 +1108,27 @@ img {
 }
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #ffffff;
+  width: 450px;
   min-height: 580px;
   border-radius: 4px;
   max-width: calc(100vw - 30px);
-  width: 100%;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
     max-width: 528px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
 }
 .modal-form {
@@ -1324,6 +1336,7 @@ fieldset {
   display: none;
   position: absolute;
   background-color: #ffffff;
+  top: 0%;
   left: 0%;
   width: 100%;
   z-index: 9;
@@ -1342,6 +1355,7 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  margin-top: -15px;
 }
 
 .mobile__menu__block {
@@ -1364,6 +1378,7 @@ fieldset {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 10px;
 }
 
 .mobile__item:not(:last-child) {

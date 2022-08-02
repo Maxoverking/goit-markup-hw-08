@@ -13,6 +13,7 @@
   display: none;
   position: absolute;
   background-color: getColor("white-color");
+  top: 0%;
   left: 0%;
   width: 100%;
 
@@ -29,6 +30,7 @@
 .mobile__menu__wrap {
   display: flex;
   height: 100vh;
+  margin-top: -15px;
 }
 .mobile__menu__block {
   display: flex;
@@ -38,6 +40,7 @@
 .mobile-container-close {
   display: flex;
   justify-content: flex-end;
+  margin-top: 10px;
 
   // position: absolute;
   // right: 29px;
