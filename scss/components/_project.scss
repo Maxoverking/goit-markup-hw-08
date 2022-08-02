@@ -120,9 +120,6 @@
 }
 
 .thumb-text {
-  padding-top: 62px;
-  padding-left: 24px;
-
   transform: translateY(4%);
 
   font-size: 18px;
@@ -131,10 +128,9 @@
   color: getColor("white-color");
 
   @media screen and (min-width: 768px) {
-    padding: 20px;
+    padding: 62px 24px 0px;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 28px;
-  }
+  // @media screen and (min-width: 1200px) {
+  // }
 }

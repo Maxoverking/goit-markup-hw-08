@@ -880,8 +880,6 @@ img {
 }
 
 .thumb-text {
-  padding-top: 62px;
-  padding-left: 24px;
   -webkit-transform: translateY(4%);
           transform: translateY(4%);
   font-size: 18px;
@@ -891,12 +889,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .thumb-text {
-    padding: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .thumb-text {
-    padding: 28px;
+    padding: 62px 24px 0px;
   }
 }
 
