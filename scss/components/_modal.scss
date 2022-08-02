@@ -15,13 +15,13 @@
   border-radius: 4px;
   max-width: calc(100vw - 30px);
   padding-bottom: 40px;
+  // margin-top: 92px;
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
   }
-  // @media screen and (max-width: 1199px) {
-  //   margin-top: 92px;
-  // }
+  @media screen and (max-width: 767px) {
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
