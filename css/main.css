@@ -212,8 +212,6 @@ img {
 @media screen and (min-width: 768px) {
   .button__close {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
   }
 }
 .button__close:hover, .button__close:focus {
