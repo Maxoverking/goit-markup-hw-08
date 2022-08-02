@@ -13,6 +13,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -1349,7 +1350,6 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  padding: 35px 25px 10px;
 }
 
 .mobile__menu__block {
@@ -1366,7 +1366,6 @@ fieldset {
 }
 
 .mobile-container-close {
-  margin-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
