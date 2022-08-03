@@ -46,11 +46,11 @@
   flex-direction: column;
   margin: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and(max-width: 1199px) {
     margin: 0px 0px 60px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -111,11 +111,11 @@
   border-radius: 4px;
   letter-spacing: 0.03em;
   /* outline: 1px solid red; */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 354px;
   }
 

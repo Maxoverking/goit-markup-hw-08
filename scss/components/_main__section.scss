@@ -41,8 +41,6 @@ $main--section--gradient: linear-gradient(
   }
 
   @media screen and (min-width: 950px) {
-    padding: 200px 0px;
-
     background-image: $main--section--gradient,
       url("../images/main-pic/img-2-768.jpg ");
 

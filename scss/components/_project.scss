@@ -9,8 +9,18 @@
 //   }
 // }
 
-.button__item__port:nth-child(5) {
-  margin-bottom: 40px;
+.button__item__port {
+  // @media screen and (max-width: 1199px) {
+  //   margin-bottom: 30px;
+  // }
+  @media screen and (max-width: 1199px) {
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .project {
@@ -21,14 +31,6 @@
   }
 
   &__item {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-
-      &:last-child {
-        margin-bottom: 0px;
-      }
-    }
-
     @media screen and (min-width: 768px) {
       display: flex;
       width: 354px;
